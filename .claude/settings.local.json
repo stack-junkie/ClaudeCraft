@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:beehiiv-publication-files.s3.amazonaws.com)",
+      "WebFetch(domain:productschool.com)",
+      "WebFetch(domain:theproductmanager.com)"
+    ],
+    "deny": []
+  }
+}
