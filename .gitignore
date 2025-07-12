@@ -28,6 +28,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.build/
 
 # Virtual environments
 .env
@@ -134,4 +135,4 @@ bug-tracker.md
 memory-bank.md
 progress-log.md
 todo.md
-prd.md
+prd.md"/worktrees/" 
