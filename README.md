@@ -1,19 +1,21 @@
-# 🚀 Stack-Junkie-Framework
+# 🚀 ClaudeCraft
 
-**Multi-Agent Development Framework for High-Quality, Secure Software Development**
+**Multi-Agent Development Framework for High-Quality, Secure Software Development with Claude AI**
 
 *Transform your development workflow with AI-powered agents that ensure security, quality, and velocity at every step.*
 
-[![GitHub Template](https://img.shields.io/badge/GitHub-Template-brightgreen)](https://github.com/your-org/stack-junkie-framework/generate)
+[![npm version](https://img.shields.io/npm/v/claudecraft.svg)](https://www.npmjs.com/package/claudecraft)
+[![PyPI version](https://img.shields.io/pypi/v/claudecraft.svg)](https://pypi.org/project/claudecraft/)
+[![GitHub Template](https://img.shields.io/badge/GitHub-Template-brightgreen)](https://github.com/stack-junkie/ClaudeCraft/generate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Security First](https://img.shields.io/badge/Security-First-red)](docs/security-rules.md)
+[![Security First](https://img.shields.io/badge/Security-First-red)](docs/rules/security-rules.md)
 [![Quality Assured](https://img.shields.io/badge/Quality-Assured-blue)](docs/best-practices.md)
 
 ---
 
-## 🎯 What is Stack-Junkie-Framework?
+## 🎯 What is ClaudeCraft?
 
-Stack-Junkie-Framework is a revolutionary **multi-agent development system** that brings structure, security, and quality to AI-assisted software development. Instead of chaotic back-and-forth coding, you get **specialized AI agents** working together in a coordinated workflow.
+ClaudeCraft is a revolutionary **multi-agent development framework** that brings structure, security, and quality to AI-assisted software development. Instead of chaotic back-and-forth coding with AI, you get **specialized AI agents** working together in a coordinated workflow - each optimized for specific development tasks.
 
 ### 🏆 Key Benefits
 
@@ -22,6 +24,28 @@ Stack-Junkie-Framework is a revolutionary **multi-agent development system** tha
 - **⚡ High Velocity**: Structured agent handoffs eliminate context loss
 - **📚 Self-Documenting**: Comprehensive memory and decision tracking
 - **🔧 Production-Ready**: GitHub Actions, deployment configs, monitoring included
+- **🚀 Easy Setup**: Get started in under 5 minutes
+
+---
+
+## 📦 Installation
+
+### Via npm (Recommended)
+```bash
+npm install -g claudecraft
+claudecraft-init my-awesome-app react-python
+```
+
+### Via pip
+```bash
+pip install claudecraft
+claudecraft-init my-awesome-app react-python
+```
+
+### Via GitHub Template
+1. Click **"Use this template"** on [GitHub](https://github.com/stack-junkie/ClaudeCraft/generate)
+2. Clone your new repository
+3. Run `./setup-project.sh "my-app" react-python`
 
 ---
 
@@ -59,30 +83,28 @@ Stack-Junkie-Framework is a revolutionary **multi-agent development system** tha
 
 ---
 
-## 🚀 Quick Start
+## ⚡ Quick Start
 
-### 1. Use This Template
-Click **"Use this template"** on GitHub to create your new project repository.
-
-### 2. Clone and Setup
+### 1. Install ClaudeCraft
 ```bash
-git clone https://github.com/your-username/your-new-project.git
-cd your-new-project
-chmod +x setup-project.sh
+# Choose your preferred method:
+npm install -g claudecraft          # Node.js users
+pip install claudecraft            # Python users
+# OR use GitHub template
 ```
 
-### 3. Initialize Your Project
+### 2. Initialize Your Project
 ```bash
-# Choose your tech stack:
-./setup-project.sh "my-awesome-app" react-python    # React + Python/FastAPI
-./setup-project.sh "my-awesome-app" react-node      # React + Node.js/Express  
-./setup-project.sh "my-awesome-app" react-only      # React frontend only
+# Create new project with your preferred tech stack:
+claudecraft-init "my-awesome-app" react-python    # React + Python/FastAPI
+claudecraft-init "my-awesome-app" react-node      # React + Node.js/Express  
+claudecraft-init "my-awesome-app" react-only      # React frontend only
 ```
 
-### 4. Start Development
+### 3. Start Development with Claude
 ```bash
-# Your first prompt to any AI assistant:
-"Initialize project development with Stack-Junkie-Framework. 
+# Your first prompt to Claude (Claude Code, ChatGPT, etc.):
+"Initialize project development with ClaudeCraft. 
 Create PRD for [your app idea] and begin feature implementation."
 ```
 
@@ -116,13 +138,15 @@ your-project/
 ├── frontend/                 # React/Next.js application
 ├── backend/                  # Python/FastAPI or Node.js/Express
 ├── docs/                     # Project documentation
+├── workspace/                # ClaudeCraft agent workspace
+│   ├── prd.md               # Product Requirements Document
+│   ├── todo.md              # Feature implementation checklist
+│   ├── memory-bank.md       # Project knowledge base
+│   ├── bug-tracker.md       # Issue tracking
+│   └── agent-instructions/  # AI agent guidance
 ├── .github/                  # CI/CD workflows and templates
 ├── CLAUDE.md                 # AI agent context and rules
-├── prd.md                    # Product Requirements Document
-├── todo.md                   # Feature implementation checklist
-├── memory-bank.md            # Project knowledge base
-├── bug-tracker.md            # Issue tracking
-└── progress-log.md           # Development progress
+└── framework-workflow.md     # Complete development workflow
 ```
 
 ---
@@ -137,25 +161,13 @@ your-project/
 ❌ No systematic testing  
 ❌ Chaotic development process  
 
-### **Stack-Junkie-Framework Solutions**
+### **ClaudeCraft Solutions**
 ✅ **Persistent Memory**: All decisions and context preserved  
 ✅ **Quality Gates**: Automated quality and security checks  
 ✅ **Structured Workflow**: Clear agent roles and handoff procedures  
 ✅ **Documentation-Driven**: Self-updating, comprehensive docs  
 ✅ **Test-Driven Development**: Built-in testing at every level  
 ✅ **Production-Ready**: Deployment and monitoring included  
-
----
-
-## 📚 Documentation
-
-| Document | Purpose |
-|----------|---------|
-| [Setup Guide](docs/setup-guide.md) | Step-by-step setup and usage |
-| [Agent Workflows](docs/agent-workflows.md) | How agents work together |
-| [Best Practices](docs/best-practices.md) | Development guidelines |
-| [Security Rules](lab-config/rules/security-rules.md) | Security requirements |
-| [Handoff Procedures](lab-config/rules/handoff-rules.md) | Agent transition protocols |
 
 ---
 
@@ -183,38 +195,13 @@ your-project/
 
 ---
 
-## 🔧 Advanced Features
-
-### **Crystal Integration** (Optional)
-Enhanced multi-session management with persistent agent contexts:
-```bash
-./setup-with-crystal.sh "my-app"  # Crystal-enhanced setup
-```
-
-### **Agent Handoff System**
-Structured transitions between development phases with complete context preservation.
-
-### **Quality Metrics**
-- Code coverage tracking
-- Performance monitoring
-- Security vulnerability scanning
-- Technical debt assessment
-
-### **Memory Management**
-- Persistent project knowledge
-- Architectural decision records
-- Bug pattern recognition
-- Success pattern replication
-
----
-
 ## 🚀 Real-World Example
 
 ```bash
 # 1. Create project
-./setup-project.sh "task-manager" react-python
+claudecraft-init "task-manager" react-python
 
-# 2. Start with Planner Agent
+# 2. Start with Planner Agent (in Claude)
 "Create PRD for a team task management app with user auth, 
 project boards, task assignment, and real-time collaboration."
 
@@ -235,9 +222,57 @@ project boards, task assignment, and real-time collaboration."
 
 ---
 
+## 📚 Documentation
+
+| Document | Purpose |
+|----------|---------|
+| [Setup Guide](docs/setup-guide.md) | Step-by-step setup and usage |
+| [Agent Workflows](docs/agent-workflows.md) | How agents work together |
+| [Best Practices](docs/best-practices.md) | Development guidelines |
+| [Complete Workflow](framework-workflow.md) | Full development process |
+| [Security Rules](docs/rules/security-rules.md) | Security requirements |
+| [Handoff Procedures](docs/rules/handoff-rules.md) | Agent transition protocols |
+
+---
+
+## 🔧 Advanced Features
+
+### **Agent Handoff System**
+Structured transitions between development phases with complete context preservation.
+
+### **Quality Metrics**
+- Code coverage tracking
+- Performance monitoring  
+- Security vulnerability scanning
+- Technical debt assessment
+
+### **Memory Management**
+- Persistent project knowledge
+- Architectural decision records
+- Bug pattern recognition
+- Success pattern replication
+
+### **Integration Support**
+- Crystal multi-session management
+- CrewAI agent orchestration
+- GitHub Actions CI/CD
+- Monitoring and alerting
+
+---
+
+## 🌍 Community & Support
+
+- **GitHub**: [https://github.com/stack-junkie/ClaudeCraft](https://github.com/stack-junkie/ClaudeCraft)
+- **Issues**: [Report bugs or request features](https://github.com/stack-junkie/ClaudeCraft/issues)
+- **Discussions**: [Community discussions](https://github.com/stack-junkie/ClaudeCraft/discussions)
+- **npm**: [https://www.npmjs.com/package/claudecraft](https://www.npmjs.com/package/claudecraft)
+- **PyPI**: [https://pypi.org/project/claudecraft/](https://pypi.org/project/claudecraft/)
+
+---
+
 ## 🤝 Contributing
 
-This framework follows its own multi-agent development principles:
+ClaudeCraft follows its own multi-agent development principles:
 
 1. **Planner Agent**: Review and plan improvements
 2. **Coder Agent**: Implement changes with tests
@@ -255,7 +290,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## ⭐ Why Choose Stack-Junkie-Framework?
+## ⭐ Why Choose ClaudeCraft?
 
 > **"Finally, a development framework that brings order to AI-assisted development. The multi-agent approach eliminates the chaos and ensures every feature is secure, tested, and documented."**
 
@@ -272,8 +307,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 **Ready to transform your development workflow?**
 
-1. **Click "Use this template"** to create your project
-2. **Run the setup script** with your preferred tech stack
+1. **Install ClaudeCraft**: `npm install -g claudecraft` or `pip install claudecraft`
+2. **Initialize your project**: `claudecraft-init "my-app" react-python`
 3. **Start building** with structured, secure, quality-focused development
 
 Join the revolution in AI-assisted software development! 🚀

@@ -6,7 +6,13 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:beehiiv-publication-files.s3.amazonaws.com)",
       "WebFetch(domain:productschool.com)",
-      "WebFetch(domain:theproductmanager.com)"
+      "WebFetch(domain:theproductmanager.com)",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(ls:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }

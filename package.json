@@ -1,0 +1,63 @@
+{
+  "name": "claudecraft",
+  "version": "1.0.1",                      
+  "description": "Claude-powered agent framework for building and scaling AI apps.",
+  "type": "module",                         
+  "main": "./src/index.js",               
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "claudecraft": "./bin/claudecraft.cjs"
+  },
+  "scripts": {
+    "cli": "node ./bin/claudecraft.cjs",   
+    "test": "echo \"(tests TBD)\"",
+    "lint": "eslint . --ext .js,.cjs,.mjs",
+    "prepublishOnly": "npm run lint"    
+  },
+  "keywords": [
+    "claude",
+    "claude-ai",
+    "agent-framework",
+    "multi-agent",
+    "automation",
+    "workflow",
+    "ai",
+    "framework",
+    "mvp",
+    "devops"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stack-junkie/ClaudeCraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stack-junkie/ClaudeCraft/issues"
+  },
+  "homepage": "https://github.com/stack-junkie/ClaudeCraft#readme",
+  "author": "ClaudeCraft Team",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "src/",
+    "docs/",
+    "workspace/",
+    "CLAUDE.md",
+    "framework-workflow.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}
