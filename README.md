@@ -6,7 +6,7 @@
 
 [![npm version](https://img.shields.io/npm/v/claudecraft.svg)](https://www.npmjs.com/package/claudecraft)
 [![PyPI version](https://img.shields.io/pypi/v/claudecraft.svg)](https://pypi.org/project/claudecraft/)
-[![GitHub Template](https://img.shields.io/badge/GitHub-Template-brightgreen)](https://github.com/stack-junkie/ClaudeCraft/generate)
+[![GitHub Template](https://img.shields.io/badge/GitHub-Template-brightgreen)](https://github.com/stack-junkie/ClaudeCraft)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Security First](https://img.shields.io/badge/Security-First-red)](docs/rules/security-rules.md)
 [![Quality Assured](https://img.shields.io/badge/Quality-Assured-blue)](docs/best-practices.md)

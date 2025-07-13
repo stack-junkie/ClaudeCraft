@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "claudecraft"
-version = "1.0.1"
+version = "1.0.2"
 description = "Multi-Agent Development Framework for High-Quality, Secure Software Development with Claude AI"
 readme = "README.md"
 license = {text = "MIT"}
