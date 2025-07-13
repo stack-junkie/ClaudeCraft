@@ -49,9 +49,11 @@ temp/
 *.sln
 *.sw?
 
-# Project specific
-bug-tracker.md
-memory-bank.md
-progress-log.md
-todo.md
-prd.md"/worktrees/" 
+# Project specific workspace files (instance data, not templates)
+workspace/bug-tracker.md
+workspace/memory-bank.md
+workspace/progress-log.md
+workspace/todo.md
+workspace/prd.md
+workspace/handoffs/*.md
+!workspace/handoffs/archive/ 

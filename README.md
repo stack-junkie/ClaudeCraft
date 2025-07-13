@@ -1,23 +1,33 @@
 # ClaudeCraft
 
-A multi-agent development framework for Claude Code powered AI software development using specialized agents that ensure security, quality, and velocity.
+A multi-agent development methodology for AI-powered software development using specialized agents that coordinate through structured workflows to ensure security, quality, and velocity.
 
-## Overview
+## What ClaudeCraft Is
 
-ClaudeCraft enables teams to go from concept to production-ready MVP through a coordinated workflow of five specialized AI agents:
+ClaudeCraft is a **systematic approach to AI development** that coordinates five specialized agents to deliver production-ready software. It's not a traditional software framework but rather a comprehensive methodology with:
 
-- **Planner Agent** - Strategic planning, PRD creation, architecture decisions
-- **Coder Agent** - Feature implementation, testing, technical setup  
-- **Tester Agent** - Quality assurance, bug discovery, performance validation
-- **Documenter Agent** - Documentation updates, user guides, API docs
-- **Reviewer Agent** - Code quality, security audits, final validation
+- **Structured agent coordination** with mandatory handoff procedures
+- **Comprehensive tracking system** for decisions, progress, and issues  
+- **Quality gates** ensuring security, performance, and maintainability
+- **Token management** preventing context loss during development
+- **Natural language interface** supporting conversational development
+
+## The Five Agent System
+
+| Agent | Role | Expertise | Session Type |
+|-------|------|-----------|--------------|
+| **Planner** | Strategic planning, PRD creation, architecture | Rich persistent memory | Long-running |
+| **Coder** | Feature implementation, testing, technical setup | Lightweight task-focused | Task-focused |
+| **Tester** | Quality assurance, bug discovery, performance | Feature-specific testing | Verification |
+| **Documenter** | Documentation, user guides, API docs | Content creation | Documentation sprints |
+| **Reviewer** | Code quality, security audits, architecture review | Comprehensive analysis | Review sessions |
 
 ## Core Philosophy
 
-- **One feature at a time** - Complete features fully before starting new ones
-- **Token awareness** - Stop at 75% context limit to preserve handoff quality
-- **Security first** - Never compromise on defensive practices (OWASP Top 10 compliance)
-- **Mainstream tech stacks preferred** - React/Next.js, Python/FastAPI, Node.js for maximum maintainability
+- **One feature at a time** - Complete implementation before starting new work
+- **Token awareness** - Stop at 75% context limit with structured handoffs  
+- **Security first** - OWASP Top 10 compliance from day one
+- **Mainstream technologies only** - React/Next.js, Python/FastAPI, Node.js
 
 ## Quick Start
 
@@ -40,9 +50,12 @@ ClaudeCraft enables teams to go from concept to production-ready MVP through a c
     handoffs/           # Agent transition management
    ```
 
-3. **Start with a Planner Agent prompt:**
+3. **Start with natural language:**
    ```
-   "I have an idea for [app description]. Can you help me create a PRD?"
+   "I have an idea for a task management app for small teams"
+   "Fix the login bug users are reporting"  
+   "Add dark mode to the dashboard"
+   "Review the security of our authentication"
    ```
 
 ## Preferred Tech Stacks
@@ -51,18 +64,38 @@ ClaudeCraft enables teams to go from concept to production-ready MVP through a c
 - **React + Node:** Frontend with React/Next.js, backend with Node.js/Express
 - **React Only:** Single-page applications with React/Next.js
 
-## Features
+## How It Works
 
-- **Structured Development Process** - Clear phases from concept to MVP delivery
-- **Agent Specialization** - Each agent optimized for specific development tasks
-- **Quality Gates** - Comprehensive testing, security, and performance validation
-- **Memory Management** - Persistent context and decision tracking across sessions
-- **Security-First** - OWASP Top 10 compliance built into every phase
-- **Documentation-Driven** - Complete user guides, API docs, and troubleshooting
+### Agent Interaction Patterns
+```
+Standard Feature Development:
+Planner → Coder → Tester → Documenter → Reviewer
+
+Bug Fix Cycle:
+Tester → Coder → Tester → Reviewer
+
+Architecture Planning:  
+Planner → Reviewer → Planner → Coder
+```
+
+### Mandatory Handoff System
+Every agent transition requires:
+- ✅ Update all workspace tracking files
+- ✅ Create comprehensive handoff document  
+- ✅ Ensure tests passing and code stable
+- ✅ Archive previous handoff
+- ✅ Define clear next steps and success criteria
+
+### Quality Standards
+- **80%+ test coverage** for all new code
+- **300 lines maximum** per file  
+- **OWASP Top 10 compliance** verified
+- **Sub-200ms API responses**, sub-3s page loads
+- **Comprehensive documentation** with every change
 
 ## Documentation
 
-- **[Complete Workflow Guide](framework-workflow.md)** - Detailed process from concept to MVP
+- **[Complete Workflow Guide](workflow.md)** - How the agent system actually works
 - **[Workspace Guide](workspace/README.md)** - Understanding the workspace structure
 - **[Agent Instructions](workspace/agent-instructions/)** - Detailed role definitions for each agent
 - **[Best Practices](docs/best-practices.md)** - Proven patterns for development velocity and quality
